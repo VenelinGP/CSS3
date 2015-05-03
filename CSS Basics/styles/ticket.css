@@ -1,0 +1,57 @@
+body {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+table {
+    background-color: #595959;
+}
+
+th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: left;
+    font-weight: normal;
+}
+
+td {
+    color: #D0D0D0;
+    line-height: 24px;
+    font-style: normal;
+}
+
+thead tr th {
+    font-size: 1.3em;
+    color: #afaeae;
+}
+
+tbody, tfoot tr th {
+    width: 140px;
+    color: white;
+    font-style: italic;
+    vertical-align: text-top;
+}
+
+tfoot tr td {
+    color: orange;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+b {
+    color: #FF0000;
+}
+
+
+img {
+    border: 0;
+    height: 14px;
+}
+
+.sname {
+    width: 250px;
+    color: #FFFFCC;
+}
