@@ -1,0 +1,108 @@
+﻿@bg: #1E3741;
+@bg-non-selected: #4B5F67;
+@bg-menu-selcted: #00968C;
+@color-menu: #729CB1;
+@color-link: #AAA;
+@color-selected: white;
+
+body, section, div, ul, li, a, img {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix {
+    zoom: 1;
+
+    &:after {
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+    }
+}
+
+.nav {
+    font-family: Arial;
+    font-size: 18px;
+    margin-left: 3px;
+    background-color: @bg;
+    height: 407px;
+    width: 761px;
+    border-radius: 5px;
+
+    #main_menu {
+        padding-top: 19px;
+        margin-left: 2px;
+        height: 40px;
+        margin-bottom: 7px;
+
+        & > li {
+            list-style-type: none;
+            display: inline;
+            background: @bg-non-selected;
+            text-align: center;
+            margin-left: 1px;
+            padding: 9px 13px 9px 12px;
+
+            &:first-of-type {
+                background: @bg;
+
+                & > a {
+                    color: @color-selected;
+                }
+
+                .sub_main_menu {
+                    display: block;
+                    position: absolute;
+                    width: 290px;
+                    height: 316px;
+                    top: 65px;
+
+                    li {
+                        display: block;
+                        width: 284px;
+                        text-align: left;
+                        padding: 8px 3px;
+                        border-bottom: 1px solid @color-link;
+
+                        &:first-of-type {
+                            background-color: @bg-menu-selcted;
+                            border-bottom: none;
+
+                            & > a {
+                                color: @color-selected;
+                            }
+
+                            & > img {
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                left: 291px;
+                                height: 315px;
+                                width: 427px;
+                            }
+                        }
+
+                        &:last-of-type {
+                            border-bottom: none;
+                        }
+
+                        a {
+                            color: @color-link;
+                        }
+
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: @color-menu;
+                font-size: 0.8em;
+            }
+        }
+    }
+}

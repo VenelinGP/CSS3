@@ -1,0 +1,240 @@
+﻿body,
+div,
+h1,
+input,
+button,
+p,
+a,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+    body #wrapper {
+        position: relative;
+        margin-top: 2px;
+        margin-left: 1px;
+        height: 580px;
+        width: 789px;
+        border: 1px solid black;
+        background-color: #F1F1F1;
+        font: 16px Consolas;
+    }
+
+nav {
+    float: left;
+    font-size: 0.70em;
+    padding-left: 2px;
+    width: 140px;
+}
+
+    nav p {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    nav > p > img {
+        vertical-align: -2px;
+        margin-right: 3px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    nav ul {
+        margin-bottom: 10px;
+    }
+
+        nav ul li:first-of-type a {
+            color: #9F0000;
+            font-weight: bold;
+        }
+
+content {
+    display: inline-block;
+    width: 495px;
+    border: 1px solid #808080;
+    position: absolute;
+    top: 2px;
+    left: 139px;
+    background-color: white;
+    padding: 10px 5px;
+}
+
+    content header h1 {
+        font-size: 1.4em;
+        padding: 5px 0;
+    }
+
+    content ul li {
+        text-align: center;
+        display: inline-block;
+        border: 1px solid black;
+        height: 20px;
+        width: 98px;
+    }
+
+        content ul li.prev {
+            background-image: url('../images/previous.png');
+            background-repeat: no-repeat;
+            background-position-x: 2px;
+            background-position-y: 6px;
+        }
+
+        content ul li.next {
+            background-image: url('../images/next.png');
+            background-repeat: no-repeat;
+            background-position-x: 90px;
+            background-position-y: 6px;
+        }
+
+        content ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 0.8em;
+        }
+
+    content article {
+        margin-bottom: 20px;
+    }
+
+        content article section {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+            content article section:first-of-type {
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+    content p.title {
+        background-color: #808080;
+        color: white;
+        height: 15px;
+        font-size: 0.8em;
+        padding-left: 3px;
+        margin-bottom: 10px;
+    }
+
+    content img#css-logo {
+        float: left;
+        margin-right: 15px;
+    }
+
+    content p.text-tutorial {
+        display: inline;
+        font-size: 0.8em;
+        padding: 10px 0;
+    }
+
+    content p {
+        font-size: 0.8em;
+    }
+
+
+    content article section a {
+        display: block;
+        padding: 5px 0;
+        font-size: 0.8em;
+        color: #9F0000;
+    }
+
+aside {
+    width: 140px;
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    background-color: #ccc;
+}
+
+    aside .service {
+        border: 1px solid #808080;
+        background-color: white;
+        margin-bottom: 1px;
+        padding: 0 0 4px 0;
+    }
+
+        aside .service p {
+            background-color: #808080;
+            color: white;
+            height: 15px;
+            font-size: 0.8em;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        aside .service input[type=text] {
+            margin: 0 0 4px 10px;
+            border: 1px outset #87A3BD;
+            height: 15px;
+            width: 92px;
+        }
+
+        aside .service input[type=button] {
+            margin: 0 0 4px 0;
+            border: 2px outset #87A3BD;
+            border-radius: 3px;
+            font-weight: bold;
+            height: 17px;
+            width: 17px;
+        }
+
+    aside #generator {
+        border: 1px solid #808080;
+        background-color: white;
+        margin-bottom: 1px;
+        padding: 0 0 4px 0;
+    }
+
+        aside #generator > #image {
+            border: 1px solid #87A3BD;
+            height: 30px;
+            width: 90px;
+            background: rgb(152,214,247); /* Old browsers */
+            background: -moz-linear-gradient(left, rgb(152,214,247) 0, rgb(192,230,250) 15%, rgb(192,230,250) 85%, rgb(152,214,247) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0,rgb(152,214,247)), color-stop(15%,rgb(192,230,250)), color-stop(85%,rgb(192,230,250)), color-stop(100%,rgb(152,214,247))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left, rgb(152,214,247) 0,rgb(192,230,250) 15%,rgb(192,230,250) 85%,rgb(152,214,247) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left, rgb(152,214,247) 0,rgb(192,230,250) 15%,rgb(192,230,250) 85%,rgb(152,214,247) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left, rgb(152,214,247) 0,rgb(192,230,250) 15%,rgb(192,230,250) 85%,rgb(152,214,247) 100%); /* IE10+ */
+            background: linear-gradient(to right, rgb(152,214,247) 0,rgb(192,230,250) 15%,rgb(192,230,250) 85%,rgb(152,214,247) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98d6f7', endColorstr='#98d6f7',GradientType=1 ); /* IE6-9 */
+            margin: 2px 25px 5px 25px;
+            padding: 0;
+        }
+
+            aside #generator > #image p {
+                color: deepskyblue;
+                font-size: 0.8em;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 7px;
+            }
+
+    aside .banner {
+        border: 1px solid #808080;
+        background-color: white;
+        margin-bottom: 1px;
+        padding: 4px 0;
+    }
+
+        aside .banner p {
+            background-color: #808080;
+            color: white;
+            height: 15px;
+            font-size: 0.8em;
+            text-align: center;
+            padding-left: 3px;
+        }
+
+    aside a {
+        display: block;
+        font-size: 0.7em;
+        text-align: center;
+        color: #9F0000;
+    }

@@ -1,0 +1,22 @@
+﻿a {
+    color: black;
+}
+
+    a:visited {
+        color: black:;
+    }
+
+ul {
+    list-style-type: none;
+}
+
+    ul li ul {
+        color: lightgray;
+        display: none;
+    }
+
+    ul li:hover ul {
+        display: block;
+        position: relative;
+        left: -30px;
+    }

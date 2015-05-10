@@ -1,0 +1,75 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+h4 {
+    margin: 0;
+    padding: 12px 12px;
+    font-weight: normal;
+    font-size: 18px;
+    font-stretch: ultra-condensed;
+}
+
+div#main {
+    background: #EEE;
+    /*border: 1px solid #b5b5b5;*/
+    height: 538px;
+    width: 421px;
+    border-radius: 8px;
+}
+
+div > div {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    height: 117px;
+    width: 395px;
+    background: #fff;
+    border: 1px solid #b5b5b5;
+    position: relative;
+    left: 13px;
+    font-size: 12px;
+}
+
+div > img {
+    border: 1px solid #b5b5b5;
+    float: left;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+
+div > p {
+    height: 50px;
+    width: 200px;
+    float: left;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 2px;
+}
+
+button {
+    margin: 2px;
+    float: left;
+    position: relative;
+    left: 107px;
+    top: 4px;
+    color: #fff;
+    padding-left: 16px;
+    font-size: 12px;
+    background: #8A0000;
+    border: 2px outset #8a0000;
+}
+
+    button.listen {
+        width: 73px;
+        height: 21px;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAAAVCAIAAACFXVQHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAB0SURBVFhH1c6xCcQAEMTAq9+1fVHOJxHO9mFSge65b37/w/VEv8z1RL/M9US/zPVEv8z1RL/M9US/zPVEv8z1RL/M9US/zPVEv8z1RL/M9US/zPVEv8z1RL/M9US/zPVEv8z1RL/M9US/zPVEv8z1RL/r7gVfRW852QGj0wAAAABJRU5ErkJggg==') /*../images/listen.png;*/
+    }
+
+    button.add {
+        width: 59px;
+        height: 21px;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAAVCAIAAAB34QGiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAABySURBVEhLzc6xCcQAEMTAq9+1fVHOJxA42odJBbrnPvj9AZ8a8YRPjXjCp0Y84VMjnvCpEU/41IgnfGrEEz414gmfGvGET414wqdGPOFTI57wqRFP+NSIJ3xqxBM+NeIJnxrxhE+NeMKnRjzhUyMeuHsBiHuKTCZ5S/UAAAAASUVORK5CYII=') /*../images/add.png;*/
+    }
